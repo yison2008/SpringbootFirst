@@ -49,8 +49,11 @@ public class TestController {
     }
 
     //访问localhost:8080/chapter2/index
-    @RequestMapping(value="/idx", method= RequestMethod.GET)
+    @RequestMapping(value="/index", method= RequestMethod.GET)
     public String index(){
         return "index";//跳转到名字为index.jsp的页面文件
     }
+
+    @RequestMapping(value="/index2", method = RequestMethod.GET)
+    public String index2() { return "index2"; }
 }
